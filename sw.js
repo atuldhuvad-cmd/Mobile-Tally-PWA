@@ -1,4 +1,4 @@
-const CACHE_NAME = 'mobile-tally-shell-v3';
+const CACHE_NAME = 'mobile-tally-shell-v4';
 const BASE_PATH = new URL(self.registration.scope).pathname;
 const APP_SHELL = new URL(BASE_PATH, self.location.origin).toString();
 const SHELL = [
