@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGradA" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1c1917" />
+      <stop offset="50%" stop-color="#0c0a09" />
+      <stop offset="100%" stop-color="#000000" />
+    </linearGradient>
+    <linearGradient id="goldGradA" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fde047" />
+      <stop offset="30%" stop-color="#f59e0b" />
+      <stop offset="70%" stop-color="#d97706" />
+      <stop offset="100%" stop-color="#b45309" />
+    </linearGradient>
+    <linearGradient id="shieldRim" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#78350f" stop-opacity="0.1" />
+    </linearGradient>
+    <filter id="glowA" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#f59e0b" flood-opacity="0.35" />
+    </filter>
+  </defs>
+
+  <!-- Squircle Base -->
+  <rect width="512" height="512" rx="120" fill="url(#bgGradA)" />
+  <rect x="6" y="6" width="500" height="500" rx="114" fill="none" stroke="url(#shieldRim)" stroke-width="3" />
+
+  <!-- Shield Shape Background -->
+  <path d="M256 70 C340 70, 410 95, 410 150 C410 290, 340 395, 256 442 C172 395, 102 290, 102 150 C102 95, 172 70, 256 70 Z" 
+        fill="#1c1917" stroke="url(#goldGradA)" stroke-width="10" filter="url(#glowA)" />
+
+  <!-- Ledger Book Spine & Pages -->
+  <path d="M256 160 L256 360" stroke="#fde047" stroke-width="8" stroke-linecap="round" />
+  
+  <!-- Left Page (Debit/Register) -->
+  <path d="M256 180 C210 165, 170 170, 150 185 L150 335 C170 320, 210 315, 256 330 Z" 
+        fill="url(#goldGradA)" />
+  
+  <!-- Right Page (Credit/Tally) -->
+  <path d="M256 180 C302 165, 342 170, 362 185 L362 335 C342 320, 302 315, 256 330 Z" 
+        fill="url(#goldGradA)" opacity="0.9" />
+
+  <!-- Tally Marks on Pages -->
+  <line x1="175" y1="220" x2="230" y2="220" stroke="#1c1917" stroke-width="5" stroke-linecap="round" />
+  <line x1="175" y1="250" x2="230" y2="250" stroke="#1c1917" stroke-width="5" stroke-linecap="round" />
+  <line x1="175" y1="280" x2="230" y2="280" stroke="#1c1917" stroke-width="5" stroke-linecap="round" />
+
+  <line x1="282" y1="220" x2="337" y2="220" stroke="#1c1917" stroke-width="5" stroke-linecap="round" />
+  <line x1="282" y1="250" x2="337" y2="250" stroke="#1c1917" stroke-width="5" stroke-linecap="round" />
+  <line x1="282" y1="280" x2="337" y2="280" stroke="#1c1917" stroke-width="5" stroke-linecap="round" />
+
+  <!-- Golden Check / Balance Star at top of Shield -->
+  <polygon points="256,105 264,125 286,125 268,138 275,158 256,145 237,158 244,138 226,125 248,125" fill="#fde047" />
+</svg>

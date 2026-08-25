@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGradB" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#18181b" />
+      <stop offset="60%" stop-color="#09090b" />
+      <stop offset="100%" stop-color="#000000" />
+    </linearGradient>
+    <linearGradient id="goldM1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a" />
+      <stop offset="40%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#b45309" />
+    </linearGradient>
+    <linearGradient id="goldM2" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#d97706" />
+      <stop offset="50%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#fde047" />
+    </linearGradient>
+    <linearGradient id="cyanT" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2dd4bf" />
+      <stop offset="100%" stop-color="#0f766e" />
+    </linearGradient>
+    <filter id="glowB" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="20" flood-color="#f59e0b" flood-opacity="0.4" />
+    </filter>
+  </defs>
+
+  <!-- Squircle Base -->
+  <rect width="512" height="512" rx="120" fill="url(#bgGradB)" />
+  <rect x="8" y="8" width="496" height="496" rx="112" fill="none" stroke="#f59e0b" stroke-opacity="0.25" stroke-width="3" />
+
+  <!-- Modern Geometric 'M' Structure (Growth Pillars) -->
+  <g filter="url(#glowB)">
+    <!-- Left Pillar (Ascending bar) -->
+    <path d="M100 370 L100 180 C100 155, 120 140, 140 155 L210 215 L210 370 Z" fill="url(#goldM1)" />
+    
+    <!-- Central Apex & Right Pillar -->
+    <path d="M210 215 L256 160 L302 215 L302 370 L256 370 L256 265 L210 215 Z" fill="url(#goldM2)" />
+    
+    <path d="M302 215 L372 155 C392 140, 412 155, 412 180 L412 370 L350 370 L350 215 Z" fill="url(#goldM1)" />
+
+    <!-- Overlapping Floating 'T' Crossbar (Synchronized FinTech Bar) -->
+    <rect x="150" y="110" width="212" height="38" rx="19" fill="url(#goldM2)" />
+    <rect x="237" y="110" width="38" height="150" rx="19" fill="url(#goldM2)" />
+  </g>
+
+  <!-- Ledger Sync Dot in Gold Accent -->
+  <circle cx="256" cy="425" r="12" fill="#fde047" />
+  <line x1="190" y1="425" x2="230" y2="425" stroke="#f59e0b" stroke-width="4" stroke-linecap="round" />
+  <line x1="282" y1="425" x2="322" y2="425" stroke="#f59e0b" stroke-width="4" stroke-linecap="round" />
+</svg>

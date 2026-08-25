@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="auroraBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f0728" />
+      <stop offset="50%" stop-color="#09090b" />
+      <stop offset="100%" stop-color="#000000" />
+    </linearGradient>
+    <linearGradient id="neonSunset" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fb7185" />
+      <stop offset="35%" stop-color="#f43f5e" />
+      <stop offset="70%" stop-color="#8b5cf6" />
+      <stop offset="100%" stop-color="#6366f1" />
+    </linearGradient>
+    <linearGradient id="brightOrange" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a" />
+      <stop offset="50%" stop-color="#fb923c" />
+      <stop offset="100%" stop-color="#ea580c" />
+    </linearGradient>
+    <filter id="auroraGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="24" flood-color="#f43f5e" flood-opacity="0.5" />
+    </filter>
+  </defs>
+
+  <!-- Squircle Base -->
+  <rect width="512" height="512" rx="120" fill="url(#auroraBg)" />
+  <rect x="8" y="8" width="496" height="496" rx="112" fill="none" stroke="url(#neonSunset)" stroke-opacity="0.4" stroke-width="3" />
+
+  <!-- Hyper-Fluid Glowing 'M' & 'T' Infinity Ledger Ribbon -->
+  <g filter="url(#auroraGlow)">
+    <!-- Primary Flowing 'M' Curve -->
+    <path d="M120 360 L120 180 C120 135, 175 130, 205 175 L256 250 L307 175 C337 130, 392 135, 392 180 L392 360" 
+          fill="none" stroke="url(#neonSunset)" stroke-width="32" stroke-linecap="round" stroke-linejoin="round" />
+
+    <!-- Sleek Intersecting 'T' Floating Crossbar (Sunset Gold) -->
+    <path d="M165 110 L347 110" stroke="url(#brightOrange)" stroke-width="26" stroke-linecap="round" />
+    <path d="M256 110 L256 210" stroke="url(#brightOrange)" stroke-width="26" stroke-linecap="round" />
+
+    <!-- Glowing Sync Core Nodes -->
+    <circle cx="256" cy="385" r="14" fill="#fb7185" />
+    <circle cx="205" cy="385" r="8" fill="#8b5cf6" />
+    <circle cx="307" cy="385" r="8" fill="#8b5cf6" />
+  </g>
+</svg>

@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="vaultPlate" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#262626" />
+      <stop offset="50%" stop-color="#171717" />
+      <stop offset="100%" stop-color="#0a0a0a" />
+    </linearGradient>
+    <linearGradient id="solidGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a" />
+      <stop offset="40%" stop-color="#facc15" />
+      <stop offset="80%" stop-color="#ca8a04" />
+      <stop offset="100%" stop-color="#854d0e" />
+    </linearGradient>
+    <filter id="shadow3" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="20" flood-color="#facc15" flood-opacity="0.35" />
+    </filter>
+  </defs>
+
+  <!-- Squircle Base -->
+  <rect width="512" height="512" rx="120" fill="#121212" />
+  <rect x="8" y="8" width="496" height="496" rx="112" fill="none" stroke="url(#solidGold)" stroke-opacity="0.3" stroke-width="3" />
+
+  <!-- Heavy 3D Bank Vault Door -->
+  <g filter="url(#shadow3)">
+    <!-- Outer Gear Toothed Vault Ring -->
+    <circle cx="256" cy="256" r="185" fill="url(#vaultPlate)" stroke="url(#solidGold)" stroke-width="12" />
+    
+    <!-- Vault Lock Spokes (Steering Wheel Handles) -->
+    <line x1="256" y1="71" x2="256" y2="441" stroke="url(#solidGold)" stroke-width="18" stroke-linecap="round" />
+    <line x1="71" y1="256" x2="441" y2="256" stroke="url(#solidGold)" stroke-width="18" stroke-linecap="round" />
+    <line x1="125" y1="125" x2="387" y2="387" stroke="url(#solidGold)" stroke-width="18" stroke-linecap="round" />
+    <line x1="125" y1="387" x2="387" y2="125" stroke="url(#solidGold)" stroke-width="18" stroke-linecap="round" />
+
+    <!-- Center Vault Hub -->
+    <circle cx="256" cy="256" r="115" fill="#18181b" stroke="url(#solidGold)" stroke-width="8" />
+
+    <!-- Embossed Golden Rupee (₹) + Tally Balanced Ledger Mark -->
+    <text x="256" y="295" text-anchor="middle" font-family="Arial, sans-serif" font-size="125" font-weight="900" fill="url(#solidGold)">₹</text>
+
+    <!-- 4 Tally Sync Screws / Rivets -->
+    <circle cx="215" cy="180" r="7" fill="#fef08a" />
+    <circle cx="297" cy="180" r="7" fill="#fef08a" />
+    <circle cx="215" cy="332" r="7" fill="#fef08a" />
+    <circle cx="297" cy="332" r="7" fill="#fef08a" />
+  </g>
+</svg>

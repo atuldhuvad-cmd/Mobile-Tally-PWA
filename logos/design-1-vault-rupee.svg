@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <radialGradient id="vaultDoor" cx="50%" cy="50%" r="50%" fx="30%" fy="30%">
+      <stop offset="0%" stop-color="#334155" />
+      <stop offset="60%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </radialGradient>
+    <linearGradient id="goldRim" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a" />
+      <stop offset="35%" stop-color="#f59e0b" />
+      <stop offset="70%" stop-color="#d97706" />
+      <stop offset="100%" stop-color="#78350f" />
+    </linearGradient>
+    <linearGradient id="rupeeGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="30%" stop-color="#fde047" />
+      <stop offset="70%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#b45309" />
+    </linearGradient>
+    <filter id="vaultShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="18" flood-color="#000000" flood-opacity="0.8" />
+    </filter>
+  </defs>
+
+  <!-- Squircle Base -->
+  <rect width="512" height="512" rx="120" fill="#090d16" />
+  <rect x="8" y="8" width="496" height="496" rx="112" fill="none" stroke="#f59e0b" stroke-opacity="0.3" stroke-width="3" />
+
+  <!-- Heavy Bank Locker Outer Rim -->
+  <circle cx="256" cy="256" r="195" fill="none" stroke="url(#goldRim)" stroke-width="16" filter="url(#vaultShadow)" />
+  
+  <!-- Bank Vault Locking Bolts (8 Heavy Steel Wheel Handles) -->
+  <circle cx="256" cy="45" r="14" fill="url(#goldRim)" />
+  <circle cx="256" cy="467" r="14" fill="url(#goldRim)" />
+  <circle cx="45" cy="256" r="14" fill="url(#goldRim)" />
+  <circle cx="467" cy="256" r="14" fill="url(#goldRim)" />
+  <circle cx="107" cy="107" r="14" fill="url(#goldRim)" />
+  <circle cx="405" cy="107" r="14" fill="url(#goldRim)" />
+  <circle cx="107" cy="405" r="14" fill="url(#goldRim)" />
+  <circle cx="405" cy="405" r="14" fill="url(#goldRim)" />
+
+  <!-- Inner Vault Door Plate -->
+  <circle cx="256" cy="256" r="172" fill="url(#vaultDoor)" stroke="#475569" stroke-width="4" />
+  
+  <!-- Dial Combination Ticks -->
+  <circle cx="256" cy="256" r="148" fill="none" stroke="#64748b" stroke-width="6" stroke-dasharray="8 12" />
+
+  <!-- Center Steel Wheel Hub -->
+  <circle cx="256" cy="256" r="115" fill="#0f172a" stroke="url(#goldRim)" stroke-width="8" />
+
+  <!-- PROMINENT 3D INDIAN RUPEE (₹) SYMBOL -->
+  <g fill="url(#rupeeGold)">
+    <!-- Top Horizontal Bar -->
+    <rect x="180" y="175" width="152" height="22" rx="11" />
+    <!-- Middle Horizontal Bar -->
+    <rect x="180" y="215" width="125" height="22" rx="11" />
+    <!-- Vertical Spine -->
+    <rect x="205" y="175" width="24" height="165" rx="12" />
+    <!-- Upper Curved Loop -->
+    <path d="M225 215 C285 215, 285 270, 225 270 L220 270 L220 250 C260 250, 260 235, 225 235 Z" />
+    <!-- Downward Diagonal Leg -->
+    <path d="M225 265 L295 340 C302 347, 312 347, 317 340 C322 333, 322 323, 315 315 L255 250 Z" />
+  </g>
+
+  <!-- Green Security Lock Indicator LEDs -->
+  <circle cx="256" cy="115" r="8" fill="#10b981" />
+  <circle cx="256" cy="397" r="8" fill="#10b981" />
+</svg>
