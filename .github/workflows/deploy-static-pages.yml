@@ -11,8 +11,8 @@ permissions:
   id-token: write
 
 concurrency:
-  group: mobile-tally-pages
-  cancel-in-progress: false
+  group: mobile-tally-pages-v2
+  cancel-in-progress: true
 
 jobs:
   deploy:
