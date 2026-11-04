@@ -1,6 +1,6 @@
 const CACHE_PREFIX = 'mobile-tally-shell-';
-const CACHE_NAME = 'mobile-tally-shell-v30';
-const BUILD_ASSET_PATHS = ["assets/html2canvas.esm-QH1iLAAe.js","assets/index-BCMhd-kc.js","assets/index-CKdMGYWY.css","assets/index.es-D1zrC-qT.js","assets/pdf-C1gUo6dv.js","assets/pdf.worker.min-CHFwMXne.mjs","assets/purify.es-CAi2OJFm.js","assets/xlsx-BGhuli8m.js"];
+const CACHE_NAME = 'mobile-tally-shell-v31';
+const BUILD_ASSET_PATHS = ["assets/html2canvas.esm-QH1iLAAe.js","assets/index-BgLtbhRJ.css","assets/index-BmOsJrYY.js","assets/index.es-R053FyH_.js","assets/pdf-C1gUo6dv.js","assets/pdf.worker.min-CHFwMXne.mjs","assets/purify.es-CAi2OJFm.js","assets/xlsx-BGhuli8m.js"];
 const BASE_PATH = new URL(self.registration.scope).pathname;
 const APP_SHELL = new URL(BASE_PATH, self.location.origin).toString();
 const SHELL = [
